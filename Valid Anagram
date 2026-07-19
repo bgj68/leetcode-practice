@@ -1,1 +1,24 @@
+class Solution(object):
+    def isAnagram(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+    
+        if len(s) != len(t):
+            return False
+        s_count = {}
+        t_count = {}
 
+        for letter in s:
+            count = s_count.get(letter, 0)
+            count += 1
+            s_count[letter] = count
+
+        for letter in t:
+            count = t_count.get(letter, 0)
+            count += 1
+            t_count[letter] = count
+            
+        return s_count == t_count
