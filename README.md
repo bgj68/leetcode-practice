@@ -18,3 +18,17 @@ I used a hash map (Python dictionary) to store integers and their associated ind
 ## Key Takeaway
 
 This problem demonstrated how hash maps can improve lookup efficiency. Instead of comparing every possible pair of numbers using a brute-force approach, I used previously stored values to find the solution in a single pass through the array.
+
+# 2. Valid Anagram
+
+**Pattern:** Hash Map (Frequency Counting)
+**Difficulty:** Easy  
+**Concepts:** Dictionaries, Strings, Frequency Maps
+
+## Approach
+
+I first checked whether the two strings were the same length. If they were not, I immediately returned false because strings of different lengths cannot be anagrams. Next, I created two frequency maps using Python dictionaries. I iterated through each string separately and counted the number of occurrences of every character. I then compared the two dictionaries. If they contained the same characters with the same frequencies, the strings were anagrams. Otherwise, they were not.
+
+## Key Takeaway
+
+This problem reinforced the use of hash maps as frequency counters rather than lookup tables. Unlike Two Sum, where the dictionary stored a relationship between values and indices, this solution used dictionaries to track the number of times each character appeared. It also incorporated Python's .get() method for safely updating dictionary values.
