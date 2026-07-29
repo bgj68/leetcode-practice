@@ -8,6 +8,12 @@ A collection of LeetCode solutions created to refresh and strengthen computer sc
 
 ## Completed Problems
 
+### Two Pointers
+
+| Problem                         | Pattern               | Difficulty | Concepts                          |
+| ------------------------------- | --------------------- | ---------- | --------------------------------- |
+| Best Time to Buy and Sell Stock | One-Pass Optimization | Easy       | Arrays, Iteration, Tracking State |
+
 ### Arrays & Hashing
 
 | Problem            | Pattern                       | Difficulty | Concepts                                  |
@@ -16,17 +22,11 @@ A collection of LeetCode solutions created to refresh and strengthen computer sc
 | Valid Anagram      | Hash Map (Frequency Counting) | Easy       | Strings, Dictionaries, Frequency Maps     |
 | Contains Duplicate | Hash Set                      | Easy       | Arrays, Sets, Membership Checking         |
 
-### Stack
+### Stacks
 
 | Problem           | Pattern | Difficulty | Concepts                                |
 | ----------------- | ------- | ---------- | --------------------------------------- |
 | Valid Parentheses | Stack   | Easy       | Stacks, Data Validation, Matching Pairs |
-
-### Greedy / One-Pass Algorithms
-
-| Problem                         | Pattern | Difficulty | Concepts                                     |
-| ------------------------------- | ------- | ---------- | -------------------------------------------- |
-| Best Time to Buy and Sell Stock | Greedy  | Easy       | Arrays, Optimization, Single-Pass Algorithms |
 
 ## Skills Practiced
 
@@ -35,6 +35,7 @@ A collection of LeetCode solutions created to refresh and strengthen computer sc
 * Hash Maps
 * Hash Sets
 * Stacks
+* Arrays
 * Problem-Solving Patterns
 * Time and Space Complexity Analysis
 
