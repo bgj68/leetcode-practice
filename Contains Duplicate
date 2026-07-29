@@ -1,14 +1,28 @@
 class Solution(object):
     def containsDuplicate(self, nums):
         """
-        :type nums: List[int]
-        :rtype: bool
+        Problem:
+        Given an integer array, determine if any value appears more than once.
+
+        Approach:
+        Use a hash set to store values that have already been seen.
+        While iterating through the array, check if the current number
+        is already in the set. If it is, a duplicate exists. Otherwise,
+        add it to the set and continue.
+
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+
+        Pattern:
+        Hash Set / Membership Checking
         """
+
         seen = set()
 
         for num in nums:
             if num in seen:
                 return True
-                
+
             seen.add(num)
+
         return False
