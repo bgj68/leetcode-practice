@@ -1,16 +1,29 @@
 class Solution(object):
     def maxProfit(self, prices):
         """
-        :type prices: List[int]
-        :rtype: int
+        Problem:
+        Given an array of stock prices, determine the maximum profit
+        possible by buying once and selling once.
+
+        Approach:
+        Track the lowest stock price seen so far while iterating through
+        the array. For each price, calculate the potential profit if the
+        stock were sold that day. Update the best profit whenever a higher
+        profit is found.
+
+        Time Complexity: O(n)
+        Space Complexity: O(1)
+
+        Pattern:
+        Greedy / One-Pass Optimization
         """
-        
+
         lowest = prices[0]
         best_profit = 0
 
         for current_price in prices:
             lowest = min(lowest, current_price)
             profit = current_price - lowest
-            best_profit =  max(best_profit, profit)
+            best_profit = max(best_profit, profit)
+
         return best_profit
-            
