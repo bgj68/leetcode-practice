@@ -1,17 +1,30 @@
 class Solution(object):
     def twoSum(self, nums, target):
         """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
+        Problem:
+        Given an array of integers, return the indices of two numbers
+        that add up to the target value.
+
+        Approach:
+        Use a hash map to store previously seen numbers and their indices.
+        For each number, calculate the complement needed to reach the target.
+        If the complement has already been seen, return its stored index
+        and the current index.
+
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+
+        Pattern:
+        Hash Map / Lookup Optimization
         """
 
         seen = {}
+
         for index, num in enumerate(nums):
-            
+
             needed = target - num
-            
+
             if needed in seen:
                 return [seen[needed], index]
-            
+
             seen[num] = index
