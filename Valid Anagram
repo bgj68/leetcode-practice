@@ -1,13 +1,24 @@
 class Solution(object):
     def isAnagram(self, s, t):
         """
-        :type s: str
-        :type t: str
-        :rtype: bool
+        Problem:
+        Given two strings, determine if one string is an anagram of the other.
+
+        Approach:
+        Use hash maps to count the frequency of each character in both strings.
+        If the two frequency maps contain the same characters with the same
+        counts, the strings are anagrams.
+
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+
+        Pattern:
+        Hash Map / Frequency Counting
         """
-    
+
         if len(s) != len(t):
             return False
+
         s_count = {}
         t_count = {}
 
@@ -20,5 +31,5 @@ class Solution(object):
             count = t_count.get(letter, 0)
             count += 1
             t_count[letter] = count
-            
+
         return s_count == t_count
